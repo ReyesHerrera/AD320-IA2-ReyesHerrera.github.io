@@ -1,1 +1,12 @@
-Hello World, This is a php file for assignment 2.
+<html>
+
+<body>
+    Welcome <?php echo $_GET["name"]; ?><br>
+    You have entered:<?php echo $_GET["email"]; ?><br>
+    
+    phone number: <?php echo $_GET["phonenumber"]; ?><br>
+    
+    state of residence: <?php echo $_GET["stateofresidence"]; ?><br>
+    
+</body>
+</html>
