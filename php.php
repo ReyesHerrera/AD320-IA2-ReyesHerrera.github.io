@@ -1,12 +1,18 @@
-<html>
+<?php
+    $name=$_GET["name"];
+    $email = $_GET['email'];
+    $phone = $_GET['phone'];
+    $stateofresidence = $_GET['stateofresidence'];
+   
+  echo "welcome".$name."<br>";
+    echo "You have entered".$email."<br>";
 
-<body>
-    Welcome <?php echo $_GET["name"]; ?><br>
-    You have entered:<?php echo $_GET["email"]; ?><br>
+if ($phone!= null || $phone!=""){
+    echo "phonenumber:".$phone."<br>";
+}
+ if ($stateofresidence!= null || $stateofresidence!=""){
+    echo "stateofresidence:".$stateofresidence."<br>";
+ }
+?>
+
     
-    phone number: <?php echo $_GET["phonenumber"]; ?><br>
-    
-    state of residence: <?php echo $_GET["stateofresidence"]; ?><br>
-    
-</body>
-</html>
